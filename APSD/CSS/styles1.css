@@ -1,0 +1,45 @@
+#container {
+  margin: auto;
+  height: 550px;
+  width: 550px;
+  border: 5px solid black;
+}
+#r1 {
+  height: 165px;
+  width: 550px;
+  border-bottom: 5px solid black;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+}
+#r2 {
+  height: 115px;
+  width: 550px;
+  border-bottom: 5px solid black;
+}
+.heading {
+  height: 75px;
+  width: 66px;
+  float: left;
+  border-right: 3px solid black;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 40px;
+}
+#r3 {
+  height: 115px;
+  width: 550px;
+  border-bottom: 5px solid black;
+}
+.content {
+  color: green;
+  height: 75px;
+  width: 66px;
+  float: left;
+  border-right: 3px solid black;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 40px;
+}
