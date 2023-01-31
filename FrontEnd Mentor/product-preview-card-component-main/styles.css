@@ -1,0 +1,18 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+  width: 1440px;
+  height: 800px;
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+}
+img{
+  width: 200px;
+  height: 400px;
+}
+h1{
+  color: hsl(212, 21%, 14%);
+}
+.hab{
+  color: hsl(158, 36%, 37%);
+}
