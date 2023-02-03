@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Preodic Table</title>
+    <style>
+      body {
+        margin: 20px;
+      }
+      #y {
+        background-color: yellow;
+      }
+      tr {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Periodic Table of Elements</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <table class="table table-bordered text-center">
+            <tr>
+              <th>I</th>
+              <th>II</th>
+              <th>III</th>
+              <th>IV</th>
+              <th>V</th>
+              <th>VI</th>
+              <th>VII</th>
+            </tr>
+            <tr>
+              <td style="background: lightgreen">H</td>
+              <td></td>
+              <td rowspan="3" colspan="3">Periodic Table of Elements</td>
+              <td></td>
+              <td id="y">He</td>
+            </tr>
+            <tr>
+              <td>Li</td>
+              <td>Be</td>
+              <td>B</td>
+              <td id="y">Ne</td>
+            </tr>
+            <tr>
+              <td>Na</td>
+              <td>Mg</td>
+              <td>Al</td>
+              <td id="y">Ar</td>
+            </tr>
+            <td>K</td>
+            <td>Ca</td>
+            <td>Sc</td>
+            <td>Ti</td>
+            <td>V</td>
+            <td>Ga</td>
+            <td class="y">Kr</td>
+          </table>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

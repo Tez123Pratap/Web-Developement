@@ -1,0 +1,21 @@
+.board {
+  height: 400px;
+  width: 400px;
+  border: 1px solid black;
+}
+.row {
+  height: 50px;
+  width: 400px;
+}
+.w {
+  height: 50px;
+  width: 50px;
+  float: left;
+  background-color: aliceblue;
+}
+.b {
+  height: 50px;
+  width: 50px;
+  float: left;
+  background-color: black;
+}
