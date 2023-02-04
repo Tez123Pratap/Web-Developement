@@ -15,8 +15,49 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>WebSite</title>
+    <style>
+      body {
+        margin-top: 50px;
+      }
+      table {
+        border: 5px solid;
+      }
+    </style>
   </head>
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <table class="table table-bordered text-center border-primary">
+            <tr>
+              <td>Logo</td>
+              <td colspan="3">Top Menu</td>
+            </tr>
+            <tr>
+              <td>Side Menu</td>
+              <td>
+                <table class="table text-center border-primary">
+                  <tr>
+                    <td>World News</td>
+                    <td>Financial</td>
+                  </tr>
+                  <tr>
+                    <td>Technology</td>
+                    <td>Sports</td>
+                  </tr>
+                </table>
+              </td>
+              <td>List Of Ads</td>
+            </tr>
+            <tr>
+              <td colspan="3">Footer</td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
   </body>
