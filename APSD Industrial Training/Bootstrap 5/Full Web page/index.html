@@ -17,7 +17,23 @@
     <title>Comlete web Page</title>
     <style>
       .card {
-        box-shadow: 4px 5px 17px 3px #333;
+        margin: 20px;
+        box-shadow: 4px 4px 4px 4px #333;
+      }
+      .card-item {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        /* padding-top: 56.25%; 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+      }
+      .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
       }
     </style>
   </head>
@@ -161,16 +177,15 @@
         </div>
         <!-- End Slider -->
       </div>
+      <!-- End Slider -->
       <hr />
       <!-- Icon -->
       <div class="row">
         <div class="col-md-3 text-center">
-          <div class="card a1">
+          <div class="card">
             <div class="card-item">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
                 fill="currentColor"
                 class="bi bi-0-circle"
                 viewBox="0 0 16 16"
@@ -190,8 +205,6 @@
             <div class="card-item">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
                 fill="currentColor"
                 class="bi bi-images"
                 viewBox="0 0 16 16"
@@ -207,12 +220,18 @@
         <div class="col-md-3 text-center">
           <div class="card">
             <div class="card-item">
-              <img
-                src="Images/android2.svg"
-                alt=""
-                height="50px"
-                width="50px"
-              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-alexa"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M7.996 0A7.998 7.998 0 0 0 0 8a8 8 0 0 0 6.93 7.93v-1.613a1.06 1.06 0 0 0-.717-1.008A5.602 5.602 0 0 1 2.4 7.865 5.579 5.579 0 0 1 8.054 2.4a5.599 5.599 0 0 1 5.535 5.81l-.002.046a6.116 6.116 0 0 1-.012.192l-.005.061a4.85 4.85 0 0 1-.033.284l-.01.068c-.685 4.516-6.564 7.054-6.596 7.068A7.998 7.998 0 0 0 15.992 8 7.998 7.998 0 0 0 7.996.001Z"
+                />
+              </svg>
             </div>
           </div>
         </div>
@@ -229,6 +248,156 @@
             </div>
           </div>
         </div>
+        <!-- End logo -->
+        <!-- About Us Start-->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card empty">
+              <div class="card-body">
+                <img src="Images/Student_images.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h1 class="display-4">Fluid jumbotron</h1>
+                <p class="lead">
+                  This is a modified jumbotron that occupies the entire
+                  horizontal space of its parent. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Adipisci omnis maxime nostrum
+                  laborum repudiandae eveniet beatae cupiditate, fugiat tempore
+                  aspernatur voluptate dolorem reiciendis earum praesentium
+                  tenetur ea vero alias a!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- About end -->
+
+        <!-- Start image texting -->
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">
+                <img src="Images/android2.svg" alt="" />
+              </div>
+              <div class="card-body">
+                <p class="p-3 text text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                  recusandae maxime consequuntur tenetur consequatur vitae
+                  sapiente, voluptas deleniti officiis doloribus ducimus.
+                  Tenetur odio doloremque, culpa necessitatibus ratione illo
+                  dignissimos asperiores!
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="btn btn-danger">Details</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">
+                <img src="Images/android2.svg" alt="" />
+              </div>
+              <div class="card-body">
+                <p class="p-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                  recusandae maxime consequuntur tenetur consequatur vitae
+                  sapiente, voluptas deleniti officiis doloribus ducimus.
+                  Tenetur odio doloremque, culpa necessitatibus ratione illo
+                  dignissimos asperiores!
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="btn btn-danger">Details</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">
+                <img src="Images/android2.svg" alt="" />
+              </div>
+              <div class="card-body">
+                <p class="p-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                  recusandae maxime consequuntur tenetur consequatur vitae
+                  sapiente, voluptas deleniti officiis doloribus ducimus.
+                  Tenetur odio doloremque, culpa necessitatibus ratione illo
+                  dignissimos asperiores!
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="btn btn-danger">Details</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">
+                <img src="Images/android2.svg" alt="" />
+              </div>
+              <div class="card-body">
+                <p class="p-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                  recusandae maxime consequuntur tenetur consequatur vitae
+                  sapiente, voluptas deleniti officiis doloribus ducimus.
+                  Tenetur odio doloremque, culpa necessitatibus ratione illo
+                  dignissimos asperiores!
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="btn btn-danger">Details</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end image texting -->
+        <!-- Start Form -->
+        <div class="row">
+          <h1 class="text text-center">Contact Us</h1>
+          <div class="col-md-6 empty">
+            <div class="row">
+              <div class="col-md-6 empty">
+                <label for="name"> Name: </label>
+                <input type="text" class="form-control" />
+                <label for="name"> Name: </label>
+                <input type="text" class="form-control" />
+                <label for="name"> Name: </label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="col-md-6 empty">
+                <label for="name"> Name: </label>
+                <input type="text" class="form-control" />
+                <label for="name"> Name: </label>
+                <input type="text" class="form-control" />
+                <label for="name"> Name: </label>
+                <input type="text" class="form-control" />
+                <div class="btn btn-dark" style="margin: 10px">Submit</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card empty">
+              <div class="card-item">
+                <iframe
+                  class="responsive-iframe"
+                  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7115.758166399838!2d80.94421532196642!3d26.90733234851648!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1675505488421!5m2!1sen!2sin"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end Form -->
       </div>
     </div>
 
