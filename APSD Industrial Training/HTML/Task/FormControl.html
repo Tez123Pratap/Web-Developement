@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-control 90</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Student Details</legend>
+      <form action="#">
+        <table
+          border="2px"
+          align="center"
+          width="80%"
+          style="border-collapse: collapse"
+        >
+          <thead>
+            <th>Title</th>
+            <th>Fill here...</th>
+          </thead>
+          <tbody align="center">
+            <!-- Student name -->
+            <tr>
+              <td><label for="first_name">Enter your first name:</label></td>
+              <td>
+                <input type="text" name="first_name" id="first_name" required />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="middle_name">Enter your middle name:</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="middle_name"
+                  id="middle_name"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="last_name">Enter your last name:</label></td>
+              <td>
+                <input type="text" name="last_name" id="last_name" required />
+              </td>
+            </tr>
+            <!-- Student father Name -->
+            <tr>
+              <td>
+                <label for="ffirst_name">Enter your father first name:</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="ffirst_name"
+                  id="ffirst_name"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="fmiddle_name">Enter your father middle name:</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="fmiddle_name"
+                  id="fmiddle_name"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="flast_name">Enter your father last name:</label>
+              </td>
+              <td>
+                <input type="text" name="flast_name" id="flast_name" required />
+              </td>
+            </tr>
+            <!-- Student Mother Name -->
+            <tr>
+              <td>
+                <label for="mfirst_name">Enter your mother first name:</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="mfirst_name"
+                  id="mfirst_name"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="mmiddle_name">Enter your mother middle name:</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="mmiddle_name"
+                  id="mmiddle_name"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="mlast_name">Enter your mother last name:</label>
+              </td>
+              <td>
+                <input type="text" name="mlast_name" id="mlast_name" required />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="dob">Your Date of Birth:</label></td>
+              <td><input type="date" name="dob" id="dob" /></td>
+            </tr>
+            <tr>
+              <td><label for="birth_place">Enter your birth place:</label></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="gender">Gender:</label>
+              </td>
+              <td>
+                <input type="radio" name="gender" id="gender" />Male
+                <input type="radio" name="gender" id="gender" />Female
+                <input type="radio" name="gender" id="gender" />Both
+              </td>
+            </tr>
+            <tr>
+              <td><label for="address">Enter your Adress:</label></td>
+              <td>
+                <textarea
+                  name="address"
+                  id="address"
+                  cols="20"
+                  rows="5"
+                  required
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="p_address">Enter your permanent adress:</label>
+              </td>
+              <td>
+                <textarea
+                  name="p_address"
+                  id="p_address"
+                  cols="20"
+                  rows="5"
+                  required
+                ></textarea>
+              </td>
+            </tr>
+            <!-- branch related -->
+            <tr>
+              <td><label for="degree">Select your Degree:</label></td>
+              <td>
+                <select name="degree" id="degree">
+                  <option value="m">--Select--</option>
+                  <option value="m">Polytechnic</option>
+                  <option value="m">B.tech</option>
+                  <option value="m" disabled>M.tech</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="branch">Select your branch:</label></td>
+              <td>
+                <input type="radio" name="branch" id="branch" />CS
+                <input type="radio" name="branch" id="branch" />ME
+                <input type="radio" name="branch" id="branch" />EE
+                <input type="radio" name="branch" id="branch" />EC
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="high_schl"
+                  >Enter your high school percentege:</label
+                >
+              </td>
+              <td>
+                <input type="number" name="high_schl" id="high_schl" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="Inter_schl"
+                  >Enter your Intermidiate school percentege:</label
+                >
+              </td>
+              <td>
+                <input type="number" name="Inter_schl" id="Inter_schl" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="lang">Choose your language:</label></td>
+              <td>
+                <input type="radio" name="lang" id="lang" />Hindi
+                <input type="radio" name="lang" id="lang" />English
+                <input type="radio" name="lang" id="lang" />Both
+              </td>
+            </tr>
+            <tr>
+              <td><label for="id_num">Enter your Id_number:</label></td>
+              <td>
+                <input
+                  type="number"
+                  name="id_num"
+                  value="2023"
+                  id="id_num"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="date">Date of joining:</label></td>
+              <td><input type="datetime" name="date" id="date" required /></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email">Enter your email:</label>
+              </td>
+              <td><input type="email" name="email" id="email" required /></td>
+            </tr>
+            <tr>
+              <td><label for="password">Enter your password:</label></td>
+              <td>
+                <input type="password" name="password" id="password" required />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="subject">Choose your subject:</label>
+              </td>
+              <td>
+                <input type="checkbox" name="c" id="subject" />C
+                <input type="checkbox" name="c++" id="subject" />C++
+                <input type="checkbox" name="c#" id="subject" />C# <br />
+                <input type="checkbox" name="java" id="subject" />Java
+                <input type="checkbox" name="other" id="subject" />Other
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="std_type">Are you day Scholar</label>
+              </td>
+              <td>
+                <input type="radio" name="std_type" id="std_type" />Yes
+                <input type="radio" name="std_type" id="std_type" />No
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="tr_type">Select your training mode:</label>
+              </td>
+              <td>
+                <select name="tr_type" id="tr_type">
+                  <option value="">--Select--</option>
+                  <option value="summer" disabled>Summer</option>
+                  <option value="internship">InternShip</option>
+                  <option value="part-time">Part-time</option>
+                  <option value="full-time">Full-time</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="clg">Enter your college name:</label></td>
+              <td><input type="text" name="clg" id="clg" /></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="telephone">Enter your Telephone number:</label>
+              </td>
+              <td><input type="tel" name="telephone" id="telephone" /></td>
+            </tr>
+            <tr>
+              <td><label for="city">Select your country</label></td>
+              <td>
+                <select name="city" id="city" required>
+                  <option value="select">--Select your city--</option>
+                  <option value="Deoria">Deoria</option>
+                  <option value="GKP">GKP</option>
+                  <option value="Baliya">Baliya</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="state">Select your state</label></td>
+              <td>
+                <select name="state" id="state" required>
+                  <option value="select">--Select your state--</option>
+                  <option value="UP">UP</option>
+                  <option value="Bihar">Bihar</option>
+                  <option value="MP">MP</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="country">Select your country</label></td>
+              <td>
+                <select name="country" id="country" required>
+                  <option value="select">--Select your country--</option>
+                  <option value="India">India</option>
+                  <option value="Srilanka">Srilanka</option>
+                  <option value="Newzeland">Newzeland</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="favcolor">Select your favorite color:</label></td>
+              <td><input type="color" name="favcolor" id="favcolor" /></td>
+            </tr>
+            <tr>
+              <td><label for="photo">Uplode Your photo:</label></td>
+              <td><input type="file" name="photo" id="photo" /></td>
+            </tr>
+            <tr>
+              <td><label for="photo">Uplode Your sign:</label></td>
+              <td><input type="file" name="photo" id="photo" /></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="checkbox" name="clr_msg" id="clr_msg" /><label
+                  for="clr_msg"
+                  >I read all above entry is correct!</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="range" name="download" id="download" />Downloading
+              </td>
+            </tr>
+            <tr>
+              <td><input type="submit" value="Submit" /></td>
+              <td><input type="reset" value="Reset" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Customer Details</legend>
+      <form action="#">
+        <table height="400px" width="80%" border="2" align="center">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Fill here...</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><label for="c_id">Customer Id:</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="c_id"
+                  id="c_id"
+                  value="cus_id101"
+                  disabled
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="cname">Customer name:</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="cname"
+                  id="cname"
+                  required
+                  placeholder="Customer name..."
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="c_address">Address:</label></td>
+              <td>
+                <textarea
+                  name="c_address"
+                  id="c_address"
+                  cols="20"
+                  rows="5"
+                  placeholder="customer address..."
+                  required
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="tel">Customer phone:</label></td>
+              <td>
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  required
+                  placeholder="customer number..."
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </fieldset>
+  </body>
+</html>
