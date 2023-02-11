@@ -1,0 +1,73 @@
+h1 {
+  text-align: center;
+}
+#box {
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  border: 2px solid black;
+}
+#r1 {
+  height: 100px;
+  width: 400px;
+  border-bottom: 2px solid black;
+}
+#r2 {
+  height: 100px;
+  width: 400px;
+  border-bottom: 2px solid black;
+}
+#r3 {
+  height: 100px;
+  width: 400px;
+  border-bottom: 2px solid black;
+}
+#r4 {
+  height: 92px;
+  width: 400px;
+}
+#task2 {
+  margin: auto;
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+}
+#r11 {
+  float: left;
+  height: 100px;
+  width: 125px;
+  border-right: 2px solid black;
+}
+#r22 {
+  float: left;
+  height: 100px;
+  width: 198px;
+  border-right: 2px solid black;
+}
+#r221 {
+  height: 48px;
+  width: 198px;
+  border-bottom: 2px solid black;
+}
+#r31 {
+  float: left;
+  height: 100px;
+  width: 90px;
+  border-right: 2px solid black;
+}
+#r32 {
+  float: left;
+  height: 100px;
+  width: 150px;
+}
+#r4c {
+  float: left;
+  height: 96px;
+  width: 198px;
+  border-right: 2px solid black;
+}
+#A {
+  height: 48px;
+  width: 198px;
+  border-bottom: 2px solid black;
+}
