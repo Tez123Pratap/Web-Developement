@@ -1,0 +1,90 @@
+#circle {
+  margin: 20% auto;
+  height: 300px;
+  width: 300px;
+  background-image: linear-gradient(red, green, blue, orange);
+  border-radius: 50%;
+  transition: 2s;
+}
+#circle:hover {
+  transform: rotateY(240deg);
+  transition: 1s;
+}
+#animation {
+  height: 200px;
+  width: 200px;
+  background: #444;
+  position: relative;
+  animation-name: don;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes don {
+  0% {
+    background-color: maroon;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: pink;
+    left: 550px;
+    top: 0px;
+  }
+  50% {
+    background-color: firebrick;
+    left: 550px;
+    top: 550px;
+  }
+  75% {
+    background-color: aqua;
+    left: 0px;
+    top: 550px;
+  }
+  100% {
+    background-color: yellow;
+    left: 0px;
+    top: 0px;
+  }
+}
+#animation2 {
+  height: 200px;
+  width: 200px;
+  background: #444;
+  position: relative;
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes slide {
+  0% {
+    background-color: maroon;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: pink;
+    left: 550px;
+    top: 0px;
+  }
+  50% {
+    background-color: firebrick;
+    left: 0px;
+    top: 0px;
+  }
+  75% {
+    background-color: aqua;
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    background-color: yellow;
+    left: 0px;
+    top: 0px;
+  }
+}
