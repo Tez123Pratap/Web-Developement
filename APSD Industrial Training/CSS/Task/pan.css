@@ -1,0 +1,41 @@
+#outline {
+  margin: 10% auto;
+  height: 300px;
+  width: 400px;
+  border: 2px solid black;
+  position: relative;
+}
+.pipe {
+  margin: auto;
+  height: 20px;
+  width: 5px;
+  background-color: green;
+  position: relative;
+}
+.pan {
+  margin: auto;
+  height: 250px;
+  width: 250px;
+  position: relative;
+}
+.top1 {
+  height: 50px;
+  width: 125px;
+  float: left;
+  background-color: green;
+  border-radius: 300% 150% 0% 0%;
+}
+.top2 {
+  height: 50px;
+  width: 125px;
+  float: left;
+  background-color: green;
+  border-radius: 100% 100% 0% 0%;
+}
+.middle {
+  height: 100px;
+  width: 250px;
+  float: left;
+  background-color: green;
+  border-radius: 0% 0% 0% 100%;
+}
