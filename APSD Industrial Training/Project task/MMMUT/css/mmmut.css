@@ -1,0 +1,21 @@
+.middle-header {
+  height: 150px;
+}
+.logo {
+  float: left;
+  margin: 30px;
+}
+.black-menu {
+  height: 45px;
+  background-color: black;
+  font-weight: bold;
+  padding: 5px;
+}
+ul li {
+  display: inline;
+  margin: 10px;
+}
+a {
+  text-decoration: none;
+  color: antiquewhite;
+}
