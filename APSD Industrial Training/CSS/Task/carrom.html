@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <title>Carrom using Pure CSS and HTML</title>
+    <style typ="text/css">
+      .carrom.table {
+        background-image: url("img/carrom/carrom-board.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 475px !important;
+        position: relative;
+        margin: 0 auto;
+        height: 477px;
+      }
+      .carrom .positions {
+        position: relative;
+        padding: 40px;
+        height: 100%;
+        width: 100%;
+      }
+      .carrom .positions .one,
+      .carrom .positions .two,
+      .carrom .positions .three,
+      .carrom .positions .four,
+      .carrom .positions .five,
+      .carrom .positions .six,
+      .carrom .positions .seven,
+      .carrom .positions .eight,
+      .carrom .positions .coins {
+        position: absolute;
+      }
+      /* .carrom .positions .one {
+
+      } */
+      .carrom .positions .two {
+        left: 0px;
+        right: 65px;
+        width: 259px;
+        height: 29px;
+        margin: 0 auto;
+      }
+      .carrom .positions .three {
+        top: 39px;
+        right: 114px;
+      }
+      .carrom .positions .four {
+        height: 100%;
+        right: 115px;
+        top: 93px;
+      }
+      .carrom .positions .five {
+        right: 126px;
+        bottom: 30px;
+        width: 101px;
+        height: 113px;
+      }
+      .carrom .positions .six {
+        left: 0px;
+        right: 66px;
+        bottom: 40px;
+        width: 259px;
+        height: 29px;
+        margin: 0 auto;
+      }
+      .carrom .positions .seven {
+        bottom: 40px;
+        width: 91px;
+        height: 113px;
+      }
+      .carrom .positions .eight {
+        height: 100%;
+        top: 93px;
+      }
+      .carrom .positions .coins {
+        top: 160px;
+        left: 165px;
+        width: 100%;
+        height: 100%;
+        text-align: middle;
+      }
+      .carrom .positions .coins img {
+        margin-left: -15px;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="carrom table" border="1">
+      <tbody>
+        <tr>
+          <td>
+            <div class="positions">
+              <div class="one">
+                <img src="carrom/arrow2.png" />
+              </div>
+              <div class="two">
+                <img src="carrom/border3.png" />
+              </div>
+              <div class="three">
+                <img src="carrom/arrow3.png" />
+              </div>
+              <div class="four">
+                <span class="valmd"
+                  ><span class="valmd-in">
+                    <img src="carrom/border1.png" /></span
+                ></span>
+              </div>
+              <div class="coins">
+                <span class="valmd"
+                  ><span class="valmd-in"> <img src="carrom/coins.png" /></span
+                ></span>
+              </div>
+              <div class="five">
+                <img src="carrom/arrow1.png" />
+              </div>
+              <div class="six">
+                <span class="valmd"
+                  ><span class="valmd-in">
+                    <img src="carrom/border2.png" /></span
+                ></span>
+              </div>
+              <div class="seven">
+                <img src="carrom/arrow4.png" />
+              </div>
+              <div class="eight">
+                <span class="valmd"
+                  ><span class="valmd-in">
+                    <img src="carrom/border4.png" /></span
+                ></span>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
