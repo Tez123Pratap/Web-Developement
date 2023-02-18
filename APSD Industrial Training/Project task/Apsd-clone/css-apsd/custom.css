@@ -1,0 +1,42 @@
+a {
+  color: black;
+  text-decoration: none;
+}
+.top-header {
+  border-radius: 15px 15px 0px 0px;
+}
+.top-text {
+  padding-top: 10px;
+  font-weight: bold;
+}
+.am {
+  color: #333;
+  font-weight: bold;
+  padding-left: 0px;
+  border-radius: 8px;
+}
+.am:hover {
+  color: white;
+  background: #333;
+}
+.gallery {
+  height: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 100%;
+}
+/* .rounded-circle {
+  background-color: #6b6bf8;
+} */
+.img2 {
+  animation: animName 20s linear infinite;
+}
+
+@keyframes animName {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
