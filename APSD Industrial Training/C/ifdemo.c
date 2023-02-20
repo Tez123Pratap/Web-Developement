@@ -8,5 +8,4 @@ void main()
         printf("You are eligible for vote!");
     else
         printf("you are not eligble for vote!");
-    //
 }
