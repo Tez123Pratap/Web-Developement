@@ -21,14 +21,14 @@
       }
     </style>
   </head>
-  <body class="bg-danger bg-opacity-25">
+  <body class="bg-white">
     <!-- start header here -->
     <header>
       <!-- start navbar here -->
-      <nav class="navbar navbar-expand-lg bg-danger bg-opacity-50">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            >parchi<span class="text text-danger">.com</span></a
+      <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container">
+          <a class="navbar-brand text-white" href="#"
+            >Online Appointment System</a
           >
           <button
             class="navbar-toggler"
@@ -44,13 +44,23 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="appointment.html">Appointment</a>
+                <a class="nav-link text-white" href="appointment.html"
+                  >Appointment</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link text-white" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="about.html">Contact Us</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -66,149 +76,50 @@
       </nav>
       <!-- end navbar here -->
       <!-- Image slider here -->
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="/Parchi.com/assets/f.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/Parchi.com/assets/sec.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/Parchi.com/assets/th.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/Parchi.com/assets/five.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/Parchi.com/assets/six.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+
       <!-- end Image slider here -->
     </header>
     <!-- end header here -->
     <!-- start middle body -->
     <section id="middle-body">
-      <div class="container mt-5">
+      <div class="container pt-5">
         <div class="row">
-          <div class="col-sm-12">
-            <p class="h6 text-dark">
-              Book your Appointment with your docter here!
-            </p>
-            <p class="h3 pt-3 text-danger">We are here to help you!</p>
-            <p class="h6 pt-1 text-white">
-              Safest teatment by your expert doctor.
-            </p>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-header bg-dark bg-opacity-25">
+                <p class="h2 text-center">Need an appointment?</p>
+                <p class="h6">
+                  Follow the simple steps below and get your appointment fixed
+                  online!
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <!-- <div class="col-sm-3"></div> -->
-          <div class="col-sm-12 d-flex justify-content-center">
-            <div class="card border-success mb-3 w-100">
-              <!-- <div class="card-header">Header</div> -->
-              <div class="card-body text-success">
-                <p class="card-text h6">Fill the form & get an</p>
-                <h5 class="card-title">instant call back in 5 minute</h5>
-                <a href="#" class="btn btn-danger btn-opacity-50 text-dark"
-                  >9875484656 <i class="bi bi-telephone-fill"></i
-                ></a>
-                <form action="" class="mt-2">
-                  <label for="name">Full Name:</label>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-header bg-dark bg-opacity-25">
+                <p class="h2 text-center">New Appointment</p>
+              </div>
+              <div class="card-body">
+                <p>Verify yourself using Mobile No.</p>
+                <hr style="width: 50%" />
+                <form action="">
+                  <label class="fw-bold">
+                    <small>PLEASE ENTER YOUR MOBILE NUMBER</small>
+                  </label>
                   <input
-                    style="border-color: green"
+                    type="number"
+                    name="mobile"
+                    id="mobile"
                     class="form-control"
-                    type="text"
-                    name="fname"
-                    id="fname"
-                    placeholder="Enter your Full name..."
+                    placeholder="Enter your Mobile number..."
+                    required
                   />
-                  <label for="tel">Mobile number:</label>
-                  <input
-                    style="border-color: green"
-                    class="form-control"
-                    type="tel "
-                    name="tel"
-                    id="tel"
-                    placeholder="Enter your Mobile no..."
-                  />
+                  <a href="#" class="btn btn-success mt-5">Submit</a>
                 </form>
               </div>
             </div>
           </div>
-          <!-- <div class="col-sm-3"></div> -->
         </div>
       </div>
     </section>

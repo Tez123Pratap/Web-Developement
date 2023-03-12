@@ -1,0 +1,47 @@
+<section id="middle-body">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-12">
+        <p class="h6 text-dark">Book your Appointment with your docter here!</p>
+        <p class="h3 pt-3 text-danger">We are here to help you!</p>
+        <p class="h6 pt-1 text-white">Safest teatment by your expert doctor.</p>
+      </div>
+    </div>
+    <div class="row">
+      <!-- <div class="col-sm-3"></div> -->
+      <div class="col-sm-12 d-flex justify-content-center">
+        <div class="card border-success mb-3 w-100">
+          <!-- <div class="card-header">Header</div> -->
+          <div class="card-body text-success">
+            <p class="card-text h6">Fill the form & get an</p>
+            <h5 class="card-title">instant call back in 5 minute</h5>
+            <a href="#" class="btn btn-danger btn-opacity-50 text-dark"
+              >9875484656 <i class="bi bi-telephone-fill"></i
+            ></a>
+            <form action="" class="mt-2">
+              <label for="name">Full Name:</label>
+              <input
+                style="border-color: green"
+                class="form-control"
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="Enter your Full name..."
+              />
+              <label for="tel">Mobile number:</label>
+              <input
+                style="border-color: green"
+                class="form-control"
+                type="tel "
+                name="tel"
+                id="tel"
+                placeholder="Enter your Mobile no..."
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-sm-3"></div> -->
+    </div>
+  </div>
+</section>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>swap two value</title>
+    <script>
+      function swap() {
+        var n1 = document.getElementById("txt1").value;
+        var n2 = document.getElementById("txt2").value;
+        document.getElementById("sp").innerHTML = "After swap:";
+        document.getElementById("txt1").value = n2;
+        document.getElementById("txt2").value = n1;
+      }
+    </script>
+    <style>
+      .sp {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      input {
+        text-align: center;
+        height: 30px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <span id="sp"></span><br />
+    <input type="text" id="txt1" placeholder="Enter first number" /><br />
+    <input type="text" id="txt2" placeholder="Enter second number" /><br />
+    <input type="button" value="Swap" onclick="swap()" />
+  </body>
+</html>

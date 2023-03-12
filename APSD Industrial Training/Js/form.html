@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculater</title>
+    <style>
+      input {
+        height: 30px;
+        width: 300px;
+      }
+      .btn {
+        margin-left: 3px;
+        width: 55px;
+        font-size: 24px;
+        font-weight: bold;
+        /* text-align: center; */
+      }
+    </style>
+    <script>
+      function add() {
+        var n1 = parseFloat(document.getElementById("txt1").value);
+        var n2 = parseFloat(document.getElementById("txt2").value);
+        n3 = n1 + n2;
+        document.getElementById("res").value = n3;
+        document.getElementById("sp").innerHTML = "Result is  " + n3;
+      }
+      function modu() {
+        var n1 = parseFloat(document.getElementById("txt1").value);
+        var n2 = parseFloat(document.getElementById("txt2").value);
+        n3 = n1 % n2;
+        document.getElementById("res").value = n3;
+        document.getElementById("sp").innerHTML = "Result is  " + n3;
+      }
+      function sub() {
+        var n1 = parseFloat(document.getElementById("txt1").value);
+        var n2 = parseFloat(document.getElementById("txt2").value);
+        n3 = n1 - n2;
+        document.getElementById("res").value = n3;
+        document.getElementById("sp").innerHTML = "Result is  " + n3;
+      }
+      function multi() {
+        var n1 = parseFloat(document.getElementById("txt1").value);
+        var n2 = parseFloat(document.getElementById("txt2").value);
+        n3 = n1 * n2;
+        document.getElementById("res").value = n3;
+        document.getElementById("sp").innerHTML = "Result is  " + n3;
+      }
+      function divi() {
+        var n1 = parseFloat(document.getElementById("txt1").value);
+        var n2 = parseFloat(document.getElementById("txt2").value);
+        n3 = n1 / n2;
+        document.getElementById("res").value = n3;
+        document.getElementById("sp").innerHTML = "Result is  " + n3;
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" placeholder="enter first number" id="txt1" />
+    <br />
+    <br />
+    <input type="text" placeholder="enter second number" id="txt2" />
+    <br />
+    <br />
+    <input type="button" class="btn" value="+" onclick="add()" />
+    <input type="button" class="btn" value="-" onclick="sub()" />
+    <input type="button" class="btn" value="*" onclick="multi()" />
+    <input type="button" class="btn" value="/" onclick="divi()" />
+    <input type="button" class="btn" value="%" onclick="modu()" />
+    <br />
+    <br />
+    <input type="text" id="res" />
+    <br />
+    <br />
+    <span id="sp"></span>
+  </body>
+</html>

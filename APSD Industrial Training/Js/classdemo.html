@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function findcase() {
+        var fruit = "";
+        var f = document.getElementsByClassName("txt1");
+        for (let i = 0; i < f.length; i++) {
+          fruit = fruit + f[i].value;
+        }
+        fruit = fruit + f;
+        // document.getElementById("res").innerHTML = fruit;
+        switch (fruit) {
+          case 1:
+            document.write(fruit);
+            break;
+
+          default:
+            break;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" name="" class="txt1" />
+    <p id="res"></p>
+    <button onclick="findcase()">find case</button>
+  </body>
+</html>
