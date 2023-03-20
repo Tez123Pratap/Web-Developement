@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odd even on different div</title>
+    <style>
+      .box {
+        height: 50px;
+        width: 500px;
+        border: 5px solid black;
+      }
+    </style>
+    <script src="oddEven.js">
+      function My(){
+          window.open("","","left=100,top=200,width=300,height=200")
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="txt" placeholder="Enter any nubmer..." /><br /><br />
+    <button onclick="oddEven()">All OddAndEven</button>
+    <br /><br />
+    Even numbers<br />
+    <div class="box" id="even"></div>
+    Odd numbers<br />
+    <div class="box" id="odd"></div>
+    <br /><br />
+    <button onclick="window.print()">Print</button>
+    <button onclick="window.open()">Open window</button>
+  </body>
+</html>

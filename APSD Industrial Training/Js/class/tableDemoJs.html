@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table demo in js</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        font-size: 18px;
+      }
+    </style>
+    <script src="tableDemoJs.js"></script>
+  </head>
+  <body>
+    <table border="2px" id="myTable" cellpadding="10px">
+      <thead>
+        <tr>
+          <th>Sr</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>College</th>
+          <th>Year</th>
+          <th>Address</th>
+          <th>delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Tez</td>
+          <td>tez@gmail.com</td>
+          <td>MMMUT</td>
+          <td>2023</td>
+          <td>Deoria</td>
+          <td><button onclick="deleteRow(this)">delete</button></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Mitesh</td>
+          <td>Mitesh@gmail.com</td>
+          <td>MMMUT</td>
+          <td>2023</td>
+          <td>Balia</td>
+          <td><button onclick="deleteRow(this)">delete</button></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Rashmi</td>
+          <td>Rashmi@gmail.com</td>
+          <td>GITM</td>
+          <td>2023</td>
+          <td>Gurugram</td>
+          <td><button onclick="deleteRow(this)">delete</button></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Pallavi</td>
+          <td>Pallavi@gmail.com</td>
+          <td>KMGGP</td>
+          <td>2023</td>
+          <td>Bijnor</td>
+          <td><button onclick="deleteRow(this)">delete</button></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Anjali</td>
+          <td>Anjali@gmail.com</td>
+          <td>KHMC</td>
+          <td>2023</td>
+          <td>Kanpur</td>
+          <td><button onclick="deleteRow(this)">delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

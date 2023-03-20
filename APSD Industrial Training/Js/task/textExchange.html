@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text exchange of two div</title>
+  </head>
+  <style>
+    .div1,
+    .div2,
+    .div3 {
+      height: 55px;
+      width: 100px;
+      padding-top: 25px;
+      text-align: center;
+      font-size: 30px;
+      border: 5px solid black;
+      margin-top: 10px;
+    }
+    /* .div1 {
+      background: red;
+    }
+    .div2 {
+      background: blue;
+    }
+    .div3 {
+      background: green;
+    } */
+  </style>
+  <body>
+    <script src="textExchange.js"></script>
+    <div class="all-div-container">
+      <div class="div1" onclick="swapDiv(event,this);">Mitesh</div>
+      <div class="div2" onclick="swapDiv(event,this);">Tez</div>
+      <div class="div3" onclick="swapDiv(event,this);">Friend</div>
+    </div>
+  </body>
+</html>
