@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #dv {
+        height: 150px;
+        width: 150px;
+        background-color: green;
+        border-radius: 50%;
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $().ready(function () {
+        $("#dv").mouseenter(function () {
+          $("#dv")
+            .animate({ left: "50%", top: "0px" }, 4000)
+            .css("background-color", "blue");
+          $("#dv").animate({ top: "300px", left: "0px" }, 4000);
+          $("#dv").animate({ left: "0%", top: "0px" }, 4000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="dv"></div>
+  </body>
+</html>

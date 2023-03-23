@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          v = $("input[name='gst']:checked").val();
+          if (v == "18") {
+            $("#res").text("GST is " + v);
+          } else {
+            $("#res").text("GST is " + v);
+          }
+          $("#res").css("color", "red");
+          $("#res").css("font-size", "30px");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <label for="gst">Please select your state type:</label>
+    <input type="radio" name="gst" value="18" />State
+    <input type="radio" name="gst" value="28" />Centeral State
+    <input type="button" value="knowGST" id="btn" /><br /><br />
+    <span id="res"></span>
+  </body>
+</html>

@@ -15,11 +15,36 @@
         // alert("Hello jquery");
         // document.write("Hello jQuery");
         // window.alert("hello mamta");
-        n1 = Number(prompt("Enter first number:", "...."));
-        n2 = Number(prompt("Enter second number:", "...."));
-        alert(n1 + n2);
+        // n1 = Number(prompt("Enter first number:", "...."));
+        // n2 = Number(prompt("Enter second number:", "...."));
+        // alert(n1 + n2);
+        $("#btn").click(function () {
+          n1 = Number($("#txt1").val());
+          n2 = Number($("#txt2").val());
+          n3 = Number($("#txt3").val());
+          if (n1 > n2 && n1 > n3) {
+            $("#res").text("Greatest number is:" + n1);
+          } else if (n2 > n1 && n2 > n3) {
+            $("#res").text("Greatest number is:" + n2);
+          } else {
+            $("#res").text("Greatest number is:" + n3);
+          }
+          // $("#res").text("Result is:" + (n1 + n2));
+          $("#res").css("color", "red");
+          $("#res").css("font-size", "30px");
+        });
       });
     </script>
   </head>
-  <body></body>
+  <body>
+    <input type="text" placeholder="Enter first number" id="txt1" />
+    <br /><br />
+    <input type="text" placeholder="Enter second number" id="txt2" />
+    <br /><br />
+    <input type="text" placeholder="Enter third number" id="txt3" />
+    <br /><br />
+    <!-- <input type="button" value="Add" id="btn" /><br /><br /> -->
+    <input type="button" value="findGreater" id="btn" /><br /><br />
+    <span id="res"></span>
+  </body>
 </html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $().ready(function () {
+        var i = 0;
+        $("#txt").keypress(function () {
+          $("#txt").css("color", "red");
+          $("span").text((i += 1));
+          $("span").css("color", "red");
+          $("span").fadeOut(4000);
+        });
+      });
+    </script>
+    <script>
+      $().ready(function () {
+        $("#btn").click(function () {
+          var good = $("#good").val();
+          var pm = parseFloat($("#txt").val());
+          if (good == "car") {
+            total = (pm * 18) / 100;
+            $("#res").html("GST is: " + total);
+          } else if (good == "motor" || good == "laptop") {
+            total = (pm * 15) / 100;
+            $("#res").html("GST is: " + total);
+          } else {
+            $("#res").html("Please choose an item");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>How to use key press function</h1>
+    <hr />
+    <input type="text" id="txt" />
+    <br /><br />
+    count: <span>0</span>
+    <hr />
+    <h1>dropDown for GST</h1>
+    <hr />
+    <span>Choose Goals : </span>
+    <select name="" id="good">
+      <option value="car">car</option>
+      <option value="motor">motor</option>
+      <option value="laptop">laptop</option></select
+    ><br /><br />
+    <input type="text" name="" id="txt" />
+    <input type="button" value="GstFind" id="btn" />
+    <br /><br />
+    <p id="res"></p>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkbox with button</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#chk").change(function () {
+          var bt = $("#btn").prop("disabled");
+          if (bt == true) {
+            $("#btn").prop("disabled", false);
+            $("#btn").css("background", "green");
+          } else {
+            $("#btn").prop("disabled", true);
+            $("#btn").css("background", "red");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1 style="color: red">How use of prop function</h1>
+    <hr style="background-color: red; height: 5px" />
+    <input type="checkbox" id="chk" />I Agree Trem and Condition <br /><br />
+    <button
+      id="btn"
+      style="
+        height: 30px;
+        width: 100px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: red;
+      "
+      disabled
+    >
+      Click
+    </button>
+  </body>
+</html>
