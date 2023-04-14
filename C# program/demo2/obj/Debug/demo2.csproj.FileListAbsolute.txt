@@ -1,0 +1,7 @@
+F:\Web-Developement\C# program\demo2\bin\Debug\demo2.exe.config
+F:\Web-Developement\C# program\demo2\bin\Debug\demo2.exe
+F:\Web-Developement\C# program\demo2\bin\Debug\demo2.pdb
+F:\Web-Developement\C# program\demo2\obj\Debug\demo2.csproj.AssemblyReference.cache
+F:\Web-Developement\C# program\demo2\obj\Debug\demo2.csproj.CoreCompileInputs.cache
+F:\Web-Developement\C# program\demo2\obj\Debug\demo2.exe
+F:\Web-Developement\C# program\demo2\obj\Debug\demo2.pdb

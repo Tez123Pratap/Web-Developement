@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Copy</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          var url = $("#img1").attr("src");
+          $("#img2").attr("src", url);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <img
+      src="ball.jpg"
+      height="300px"
+      width="300px"
+      id="img1"
+      style="border: 3px solid black"
+    />
+    <img
+      height="300px"
+      width="300px"
+      id="img2"
+      style="border: 3px solid maroon"
+    />
+    <br />
+    <button>Copy Image</button>
+    <code><strong>Html</strong></code>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Div division demo2</title>
+    <style>
+      #box {
+        height: 200px;
+        width: 200px;
+        border: 5px solid black;
+      }
+      .row {
+        height: 63px;
+        width: 200px;
+        border-bottom: 5px solid black;
+      }
+      #c1 {
+        height: 63px;
+        width: 50px;
+        border-right: 5px solid black;
+        float: left;
+      }
+      #c2 {
+        height: 63px;
+        width: 100px;
+        border-right: 5px solid black;
+        float: left;
+      }
+      .rc2 {
+        height: 63px;
+        width: 95px;
+        float: left;
+        border-right: 5px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <div class="row">
+        <div id="c1"></div>
+        <div id="c2"></div>
+        <div id="c3"></div>
+      </div>
+      <div class="row">
+        <div class="rc2"></div>
+        <div class="rc2" style="display: none"></div>
+      </div>
+      <div class="row" style="display: none"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <script>
+    setInterval(dt, 1000);
+    function dt() {
+      var d = new Date();
+      document.getElementById("dt").innerHTML = d.toLocaleDateString();
+      document.getElementById("t").innerHTML = d.toLocaleTimeString();
+    }
+  </script>
+  <body onload="dt()">
+    <div class="container-fluid">
+      <div class="row bg-secondary text-center">
+        <div class="col-sm-2"><span id="dt"></span></div>
+        <div class="col-sm-8">
+          <a href="#" class="px-2 text-white"
+            ><i class="bi bi-telephone"></i>+9191991191</a
+          >
+          <a href="#" class="px-2"
+            ><i class="bi bi-envelope-at"></i>apsd@gmail.com</a
+          >
+        </div>
+        <div class="col-sm-2"><span id="t"></span></div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

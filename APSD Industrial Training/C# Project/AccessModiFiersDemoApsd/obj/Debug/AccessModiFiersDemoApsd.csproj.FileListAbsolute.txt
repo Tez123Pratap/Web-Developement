@@ -1,0 +1,7 @@
+F:\Web-Developement\APSD Industrial Training\C# Project\AccessModiFiersDemoApsd\bin\Debug\AccessModiFiersDemoApsd.exe.config
+F:\Web-Developement\APSD Industrial Training\C# Project\AccessModiFiersDemoApsd\bin\Debug\AccessModiFiersDemoApsd.exe
+F:\Web-Developement\APSD Industrial Training\C# Project\AccessModiFiersDemoApsd\bin\Debug\AccessModiFiersDemoApsd.pdb
+F:\Web-Developement\APSD Industrial Training\C# Project\AccessModiFiersDemoApsd\obj\Debug\AccessModiFiersDemoApsd.csproj.AssemblyReference.cache
+F:\Web-Developement\APSD Industrial Training\C# Project\AccessModiFiersDemoApsd\obj\Debug\AccessModiFiersDemoApsd.csproj.CoreCompileInputs.cache
+F:\Web-Developement\APSD Industrial Training\C# Project\AccessModiFiersDemoApsd\obj\Debug\AccessModiFiersDemoApsd.exe
+F:\Web-Developement\APSD Industrial Training\C# Project\AccessModiFiersDemoApsd\obj\Debug\AccessModiFiersDemoApsd.pdb

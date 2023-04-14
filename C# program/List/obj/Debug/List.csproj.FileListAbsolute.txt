@@ -1,0 +1,7 @@
+F:\Web-Developement\C# program\List\bin\Debug\List.exe.config
+F:\Web-Developement\C# program\List\bin\Debug\List.exe
+F:\Web-Developement\C# program\List\bin\Debug\List.pdb
+F:\Web-Developement\C# program\List\obj\Debug\List.csproj.AssemblyReference.cache
+F:\Web-Developement\C# program\List\obj\Debug\List.csproj.CoreCompileInputs.cache
+F:\Web-Developement\C# program\List\obj\Debug\List.exe
+F:\Web-Developement\C# program\List\obj\Debug\List.pdb

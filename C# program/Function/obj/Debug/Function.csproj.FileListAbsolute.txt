@@ -1,0 +1,7 @@
+F:\Web-Developement\C# program\Function\bin\Debug\Function.exe.config
+F:\Web-Developement\C# program\Function\bin\Debug\Function.exe
+F:\Web-Developement\C# program\Function\bin\Debug\Function.pdb
+F:\Web-Developement\C# program\Function\obj\Debug\Function.csproj.AssemblyReference.cache
+F:\Web-Developement\C# program\Function\obj\Debug\Function.csproj.CoreCompileInputs.cache
+F:\Web-Developement\C# program\Function\obj\Debug\Function.exe
+F:\Web-Developement\C# program\Function\obj\Debug\Function.pdb
