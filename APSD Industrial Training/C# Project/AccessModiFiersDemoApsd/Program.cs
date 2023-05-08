@@ -10,12 +10,14 @@ namespace AccessModiFiersDemoApsd
             Console.WriteLine(c1.legs);
             //Console.WriteLine(c1.color);
             c1.show();
+            Console.WriteLine("I am Internal and access in Main "+c1.MyNumber);
             Console.ReadKey();
         }
     }
     class animal
     {
        protected string color = "white";
+       internal int MyNumber = 23;
         
     }
     class cow : animal
@@ -24,6 +26,8 @@ namespace AccessModiFiersDemoApsd
         public void show()
         {
             Console.WriteLine("Cow is "+color);
+            Console.WriteLine("I am Internal and access in Derived class " + MyNumber);
+
         }
     }
 }

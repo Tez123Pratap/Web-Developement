@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row bg-dark" style="min-height:60px">
+            <div class="col-sm-12 text-center text-white">header</div>
+
+        </div>
+        <div class="row ">
+            <div class="col-sm-2 bg-danger text-white" style="min-height:330px">
+                <ul>
+                    <li>@Html.ActionLink("Index", "Index")</li>
+                    <li>@Html.ActionLink("About", "About")</li>
+                    <li>@Html.ActionLink("Contact", "Contact")</li>
+                    <li>@Html.ActionLink("Login","Login")</li>
+                </ul>
+            </div>
+            <div class="col-sm-10 h-75">
+                @RenderBody()
+            </div>
+        </div>
+        <div class="row bg-dark">
+            <div class="col-sm-12 text-white text-center">footer</div>
+        </div>
+    </div>
+</body>
+</html>

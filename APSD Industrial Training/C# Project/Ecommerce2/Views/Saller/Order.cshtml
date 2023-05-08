@@ -1,0 +1,137 @@
+﻿
+@{
+    ViewBag.Title = "Order";
+    Layout = "~/Views/Shared/SallerMaster.cshtml";
+}
+
+
+<div class="row mt-1">
+    <div class="col-sm-6">
+        <h2 class="px-4">Order ID:33346565</h2>
+    </div>
+    <div class="col-sm-6 d-flex">
+        <a class="btn btn-outline-dark my-2 mx-2 ms-auto" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-ppt-fill" viewBox="0 0 16 16">
+                <path d="M8.188 10H7V6.5h1.188a1.75 1.75 0 1 1 0 3.5z" />
+                <path d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM7 5.5a1 1 0 0 0-1 1V13a.5.5 0 0 0 1 0v-2h1.188a2.75 2.75 0 0 0 0-5.5H7z" />
+            </svg>
+            Invoice
+        </a>
+        <a class="btn btn-primary my-2 mx-2 " href="#">
+            Track your order
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+            </svg>
+        </a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 ">
+        <a class="px-5 mt-0" href="#" style="text-decoration:none">Order date:feb 12,2023</a>
+        <span>|</span>
+        <a class="text-secondary mx-5 my-5 text-success fw-bold" href="#" style="text-decoration:none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-fill text-green" viewBox="0 0 16 16">
+                <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z" />
+            </svg>
+            Estimated delivery:May 14,2023
+        </a>
+    </div>
+</div>
+<div class="row mt-1">
+    <div class="col-sm-12">
+        <table class="table table-striped ">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+
+                                <img height="80" width="80" src="~/Content/Saller/img/mac.jpg" />
+                            </td>
+                            <td>
+                                <h4 class="text-black ms-4">MacBook Pro 14"</h4>
+                                <small class="px-5">Space gray | 32GB | 1TB</small>
+
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </td>
+                <td>
+                    <h4 class="text-black fw-bold ">$2599.00</h4>
+                    <small>Qty:1</small>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <table>
+                        <tr>
+                            <td>
+
+
+
+                                <img height="80" width="80" src="~/Content/Saller/img/ipad.jpg" />
+                            </td>
+                            <td>
+                                <h4 class="text-black ms-5">i Pad Pro"</h4>
+                                <small class="px-5">Space gray | 2TB | Cellular</small>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </td>
+
+                <td>
+                    <h4 class="text-black fw-bold ">$2399.00</h4>
+                    <small>Qty:1</small>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <img height="80" width="80" src="~/Content/Saller/img/ipods.jpg" />
+                            </td>
+                            <td>
+                                <h4 class="text-black ms-5">Air Pods Max"</h4>
+                                <small class="px-5">Space Gray</small>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+                <td>
+                    <h4 class="text-black fw-bold ">$549.00</h4>
+                    <small>Qty:1</small>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <p class="px-5  fw-bold h5" style="text-decoration:none">Payment</p>
+
+        <span class="px-5 mt-0 text-dark">Visa**65</span>
+
+
+    </div>
+    <div class="col-sm-6">
+        <p class="px-5  fw-bold h5" style="text-decoration:none">Delivery</p>
+        <span class="px-5 mt-0 ">Address</span>
+        <address class="px-5">
+            246735 Raja ka tajpur<br />
+            distt Bijnor
+            state up<br />
+            vlg Mussepur
+        </address>
+    </div>
+</div>
+

@@ -1,0 +1,83 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script>
+    <style>
+        body {
+            background-color: paleturquoise;
+        }
+
+        .box {
+            padding: 40px;
+            min-height: 250px;
+            width: 450px;
+            background-color: aqua;
+            margin: 150px auto;
+        }
+
+        #sp {
+            color: red;
+            font-family: serif;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        .form-label {
+            font-family: Impact;
+            font-size: 20px;
+        }
+
+        .box ::placeholder {
+            font-family: cursive;
+        }
+
+        .box .form-control {
+            color: red;
+            font-family: serif;
+        }
+
+        .btn {
+            border: 2px solid white;
+            margin-bottom: 15px;
+            font-family: serif;
+        }
+
+        .box:hover {
+            background: rgba(0,0,0,.5);
+            color: #a7cf17;
+            box-shadow: 0px 0px 15px 2px yellow,0px 0px 40px 10px white;
+            transition: all ease 1s;
+        }
+    </style>
+    <title>LogIn</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="box">
+        <form>
+            <div class="mb-3">
+                <h2 id="sp"> LOGIN <b style="color:#a7cf17"> FROM </b></h2>
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="userId" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="userPass" placeholder="name@567">
+            </div>
+            <div class="mb-3">
+                <input type="button" value="Login" id="logInBtn" class="align-items-center btn btn-success  btn-lg" />
+            </div>
+        </form>
+    </div>
+    <script src="~/Content/Login/js/Login.js"></script>
+
+</body>
+</html>
