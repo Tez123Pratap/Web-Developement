@@ -214,7 +214,7 @@
             <nav class="navbar-vertical-nav d-none d-xl-block ">
                 <div class="navbar-vertical">
                     <div class="px-4 py-5">
-                        <a href="../index.html" class="navbar-brand">
+                        <a href="../index" class="navbar-brand">
                             <img src="~/Content/AdminZone/images/logo/freshcart-logo.svg" alt="">
                         </a>
                     </div>
@@ -222,7 +222,7 @@
                         <ul class="navbar-nav flex-column" id="sideNavbar">
 
                             <li class="nav-item ">
-                                <a class="nav-link  active " href="../dashboard/index.html">
+                                <a class="nav-link  active " href="/Admin/dashboard">
                                     <div class="d-flex align-items-center">
                                         <span class="nav-link-icon"> <i class="bi bi-house"></i></span>
                                         <span class="nav-link-text">Dashboard</span>
@@ -233,20 +233,56 @@
                                 <span class="nav-label">Store Managements</span>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link " href="../dashboard/products.html">
+                                <a class="nav-link " href="/Admin/product">
                                     <div class="d-flex align-items-center">
                                         <span class="nav-link-icon"> <i class="bi bi-cart"></i></span>
                                         <span class="nav-link-text">Products</span>
                                     </div>
                                 </a>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link " href="../dashboard/categories.html">
+                            @*<li class="nav-item ">
+                                <a class="nav-link " href="/Admin/categories">
                                     <div class="d-flex align-items-center">
                                         <span class="nav-link-icon"> <i class="bi bi-list-task"></i></span>
                                         <span class="nav-link-text">Categories</span>
                                     </div>
                                 </a>
+                            </li>*@
+                            <li class="nav-item">
+                                <a class="nav-link   collapsed " href="#"
+                                   data-bs-toggle="collapse" data-bs-target="#navCategoriesrders" aria-expanded="false"
+                                   aria-controls="navCategoriesOrders">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-icon"> <i class="bi bi-list-task"></i></span>
+                                        <span class="nav-link-text">Categories</span>
+                                    </div>
+                                </a>
+                                <div id="navCategoriesrders" class="collapse "
+                                     data-bs-parent="#sideNavbar">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item ">
+                                            <a class="nav-link "
+                                               href="/Admin/OrederList">
+                                                Add Product Type
+                                            </a>
+                                        </li>
+                                        <!-- Nav item -->
+                                        <li class="nav-item ">
+                                            <a class="nav-link "
+                                               href="/Admin/OrderSingle">
+                                                Add Category
+
+                                            </a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="nav-link "
+                                               href="/Admin/OrderSingle">
+                                                Add Sub-Category
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link   collapsed " href="#"
@@ -262,14 +298,14 @@
                                     <ul class="nav flex-column">
                                         <li class="nav-item ">
                                             <a class="nav-link "
-                                               href="../dashboard/order-list.html">
+                                               href="/Admin/OrederList">
                                                 List
                                             </a>
                                         </li>
                                         <!-- Nav item -->
                                         <li class="nav-item ">
                                             <a class="nav-link "
-                                               href="../dashboard/order-single.html">
+                                               href="/Admin/OrderSingle">
                                                 Single
 
                                             </a>
@@ -279,7 +315,7 @@
                             </li>
 
                             <li class="nav-item ">
-                                <a class="nav-link " href="../dashboard/vendor-grid.html">
+                                <a class="nav-link " href="/Admin/Venders">
                                     <div class="d-flex align-items-center">
                                         <span class="nav-link-icon"> <i class="bi bi-shop"></i></span>
                                         <span class="nav-link-text">Sellers / Vendors</span>
@@ -287,7 +323,7 @@
                                 </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link " href="../dashboard/customers.html">
+                                <a class="nav-link " href="/Admin/Customers">
                                     <div class="d-flex align-items-center">
                                         <span class="nav-link-icon"> <i class="bi bi-people"></i></span>
                                         <span class="nav-link-text">Customers</span>
@@ -295,7 +331,7 @@
                                 </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link " href="../dashboard/reviews.html">
+                                <a class="nav-link " href="/Admin/Reviews">
                                     <div class="d-flex align-items-center">
                                         <span class="nav-link-icon"> <i class="bi bi-star"></i></span>
                                         <span class="nav-link-text">Reviews</span>
@@ -459,7 +495,7 @@
             <nav class="navbar-vertical-nav offcanvas offcanvas-start navbar-offcanvac" tabindex="-1" id="offcanvasExample">
                 <div class="navbar-vertical">
                     <div class="px-4 py-5 d-flex justify-content-between align-items-center">
-                        <a href="../index.html" class="navbar-brand">
+                        <a href="../index" class="navbar-brand">
                             <img src="~/Content/AdminZone/images/logo/freshcart-logo.svg" alt="">
                         </a>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -467,7 +503,7 @@
                     <div class="navbar-vertical-content flex-grow-1" data-simplebar="">
                         <ul class="navbar-nav flex-column">
                             <li class="nav-item ">
-                                <a class="nav-link  active " href="../dashboard/index.html">
+                                <a class="nav-link  active " href="/Admin/index">
                                     <div class="d-flex align-items-center">
                                         <span class="nav-link-icon"> <i class="bi bi-house"></i></span>
                                         <span>Dashboard</span>
@@ -478,7 +514,7 @@
                                 <span class="nav-label">Store Managements</span>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link " href="../dashboard/products.html">
+                                <a class="nav-link " href="/Admin/products">
                                     <div class="d-flex align-items-center">
                                         <span class="nav-link-icon"> <i class="bi bi-cart"></i></span>
                                         <span class="nav-link-text">Products</span>
@@ -486,7 +522,7 @@
                                 </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link " href="../dashboard/categories.html">
+                                <a class="nav-link " href="/Admin/categories">
                                     <div class="d-flex align-items-center">
                                         <span class="nav-link-icon"> <i class="bi bi-list-task"></i></span>
                                         <span class="nav-link-text">Categories</span>
@@ -507,14 +543,14 @@
                                     <ul class="nav flex-column">
                                         <li class="nav-item ">
                                             <a class="nav-link "
-                                               href="../dashboard/order-list.html">
+                                               href="/Admin/order-list">
                                                 List
                                             </a>
                                         </li>
                                         <!-- Nav item -->
                                         <li class="nav-item ">
                                             <a class="nav-link "
-                                               href="../dashboard/order-single.html">
+                                               href="/Admin/order-single">
                                                 Single
 
                                             </a>
@@ -523,7 +559,7 @@
                                 </div>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link " href="../dashboard/vendor-grid.html">
+                                <a class="nav-link " href="/Admin/vendor-grid">
                                     <div class="d-flex align-items-center">
                                         <span class="nav-link-icon"> <i class="bi bi-shop"></i></span>
                                         <span class="nav-link-text">Sellers / Vendors</span>
@@ -531,7 +567,7 @@
                                 </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link " href="../dashboard/customers.html">
+                                <a class="nav-link " href="/Admin/customers">
                                     <div class="d-flex align-items-center">
                                         <span class="nav-link-icon"> <i class="bi bi-people"></i></span>
                                         <span class="nav-link-text">Customers</span>
@@ -539,7 +575,7 @@
                                 </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link " href="../dashboard/reviews.html">
+                                <a class="nav-link " href="/Admin/reviews">
                                     <div class="d-flex align-items-center">
                                         <span class="nav-link-icon"> <i class="bi bi-star"></i></span>
                                         <span class="nav-link-text">Reviews</span>

@@ -36,5 +36,9 @@ namespace FreshCart.Controllers
         {
             return View();
         }
+        public ActionResult AddProduct()
+        {
+            return View();
+        }
     }
 }
