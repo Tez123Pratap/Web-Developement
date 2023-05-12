@@ -42,146 +42,71 @@
                         <h4 class="mb-4 h5">Product Information</h4>
                         <div class="row">
                             <!-- input -->
-                            <div class="mb-3 col-lg-6">
+                            <div class="mb-3 col-lg-12">
                                 <label class="form-label">Title</label>
-                                <input type="text" class="form-control" placeholder="Product Name" required>
+                                <input type="text" class="form-control" id="productTxt" placeholder="Product Name" required>
                             </div>
                             <!-- input -->
-                            <div class="mb-3 col-lg-6">
-                                <label class="form-label">Product Category</label>
-                                <select class="form-select">
-                                    <option selected>Product Category</option>
-                                    <option value="Dairy, Bread & Eggs">Dairy, Bread & Eggs</option>
-                                    <option value="Snacks & Munchies">Snacks & Munchies</option>
-                                    <option value="Fruits & Vegetables">Fruits & Vegetables</option>
-                                </select>
-                            </div>
-                            <!-- input -->
-                            <div class="mb-3 col-lg-6">
-                                <label class="form-label">Weight</label>
-                                <input type="text" class="form-control" placeholder="Weight" required>
-                            </div>
-                            <!-- input -->
-                            <div class="mb-3 col-lg-6">
-                                <label class="form-label">Units</label>
-                                <select class="form-select">
-                                    <option selected>Select Units</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </div>
-                            <div>
-                                <div class="mb-3 col-lg-12 mt-5">
-                                    <!-- heading -->
-                                    <h4 class="mb-3 h5">Product Images</h4>
-
-                                    <!-- input -->
-                                    <form action="#" class="d-block dropzone border-dashed rounded-2 ">
-                                        <div class="fallback">
-                                            <input name="file" type="file" multiple>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <!-- input -->
-                            <div class="mb-3 col-lg-12 mt-5">
-                                <h4 class="mb-3 h5">Product Descriptions</h4>
-                                <div class="py-8" id="editor"></div>
+                            <div class="text-center">
+                                <input type="button" value="Create Product" class="btn btn-primary" id="btnProduct" />
+                                <input type="button" value="Reset" class="btn btn-outline-danger" id="btnReset" />
                             </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <div class="col-lg-4 col-12">
-                <!-- card -->
-                <div class="card mb-6 card-lg">
-                    <!-- card body -->
-                    <div class="card-body p-6">
-                        <!-- input -->
-                        <div class="form-check form-switch mb-4">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchStock" checked>
-                            <label class="form-check-label" for="flexSwitchStock">In Stock</label>
-                        </div>
-                        <!-- input -->
-                        <div>
-                            <div class="mb-3">
-                                <label class="form-label">Product Code</label>
-                                <input type="text" class="form-control" placeholder="Enter Product Title">
-                            </div>
-                            <!-- input -->
-                            <div class="mb-3">
-                                <label class="form-label">Product SKU</label>
-                                <input type="text" class="form-control" placeholder="Enter Product Title">
-                            </div>
-                            <!-- input -->
-                            <div class="mb-3">
-                                <label class="form-label" id="productSKU">Status</label><br>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                           value="option1" checked>
-                                    <label class="form-check-label" for="inlineRadio1">Active</label>
-                                </div>
-                                <!-- input -->
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                           value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">Disabled</label>
-                                </div>
-                                <!-- input -->
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- card -->
-                <div class="card mb-6 card-lg">
-                    <!-- card body -->
-                    <div class="card-body p-6">
-                        <h4 class="mb-4 h5">Product Price</h4>
-                        <!-- input -->
-                        <div class="mb-3">
-                            <label class="form-label">Regular Price</label>
-                            <input type="text" class="form-control" placeholder="$0.00">
-                        </div>
-                        <!-- input -->
-                        <div class="mb-3">
-                            <label class="form-label">Sale Price</label>
-                            <input type="text" class="form-control" placeholder="$0.00">
-                        </div>
-
-                    </div>
-                </div>
-                <!-- card -->
-                <div class="card mb-6 card-lg">
-                    <!-- card body -->
-                    <div class="card-body p-6">
-                        <h4 class="mb-4 h5">Meta Data</h4>
-                        <!-- input -->
-                        <div class="mb-3">
-                            <label class="form-label">Meta Title</label>
-                            <input type="text" class="form-control" placeholder="Title">
-                        </div>
-
-                        <!-- input -->
-                        <div class="mb-3">
-                            <label class="form-label">Meta Description</label>
-                            <textarea class="form-control" rows="3" placeholder="Meta Description"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <!-- button -->
-                <div class="d-grid">
-                    <a href="#" class="btn btn-primary">
-                        Create Product
-                    </a>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-12">
+                <h5 class="mb-4">Product List</h5>
+                <table class="table table-borderless">
+                    <tr class="border-bottom">
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Add Date</th>
+                        <th>Action</th>
+                    </tr>
+                    <tbody id="porductList">
+                    </tbody>
+                </table>
             </div>
-
         </div>
     </div>
+    <script src="~/Scripts/libs/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            bindtype();
+        })
+        $('#btnProduct').click(function () {
+            var productName = $('#productTxt').val();
+            $.ajax({
+                type: "post",
+                url: "/Admin/AddProductName",
+                data: { Name: productName },
+                success: function (data) {
+                    bindtype();
+                }
+            })
+        })
+
+    </script>
+    <script>
+        function bindtype() {
+            $.ajax({
+                type: 'post',
+                url: '/Admin/BindProTypeLst',
+                success: function (data) {
+                    $('#porductList').html('');
+                    $.each(data, function (i, item) {
+                        var tr = '<tr><td>' + i + '</td><td>' + item.Name + '</td><td>' + item.Crd + '</td><td>Edit/Delete</td></tr>'+'<hr/>';
+                        $('#porductList').append(tr);
+                    })
+                }
+
+            })
+        }
+    </script>
 </main>
 
 
