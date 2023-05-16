@@ -40,6 +40,14 @@ namespace FreshCart.Controllers
         {
             return View();
         }
+        public ActionResult AddCategories()
+        {
+            return View();
+        }
+        public ActionResult AddSubCategories()
+        {
+            return View();
+        }
         public JsonResult AddProductName(string Name, string Pid)
         {
             bool result = false;
@@ -68,6 +76,28 @@ namespace FreshCart.Controllers
         public JsonResult BindProTypeLst()
         {
             return Json(Db.Mstr_Categories.Where(x => x.Pid == 0).ToList(), JsonRequestBehavior.AllowGet);
+        }
+        
+        public JsonResult BindCategoryLst()
+        {
+            int[] typeIds = Db.Mstr_Categories.Where(x => x.Pid == 0).Select(x => x.Id).ToArray();
+
+            List<Mstr_Categories> lst = Db.Mstr_Categories.Where(x => typeIds.Contains((int)x.Pid)).ToList();
+            return Json(lst, JsonRequestBehavior.AllowGet);
+        }
+        public JsonResult BindSubCategoryLst()
+        {
+
+            int[] typeIds = Db.Mstr_Categories.Where(x => x.Pid == 0).Select(x => x.Id).ToArray();
+
+            int[] catIds = Db.Mstr_Categories.Where(x => typeIds.Contains((int)x.Pid)).Select(x => x.Id).ToArray();
+            List<Mstr_Categories> lst = Db.Mstr_Categories.Where(x => catIds.Contains((int)x.Pid)).ToList();
+            return Json(lst, JsonRequestBehavior.AllowGet);
+        }
+        public JsonResult BindCategoryByPid(int Pid)
+        {
+            MainPageData main = new MainPageData();
+            return Json(main.GetAllCategoryById(Pid), JsonRequestBehavior.AllowGet);
         }
     }
 }

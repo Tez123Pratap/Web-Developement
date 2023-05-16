@@ -1,0 +1,139 @@
+﻿
+@{
+    ViewBag.Title = "AddCategories";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+
+<main class="main-content-wrapper">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row mb-8">
+            <div class="col-md-12">
+                <div class="d-md-flex justify-content-between align-items-center">
+                    <!-- page header -->
+                    <div>
+                        <h2>Add New Product Type</h2>
+                        <!-- breacrumb -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="#" class="text-inherit">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="#" class="text-inherit">Categories</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Add New Category</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- button -->
+                    <div>
+                        <a href="products.html" class="btn btn-light">Back to Category</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- row -->
+        <div class="row">
+
+            <div class="col-lg-12 col-12">
+                <!-- card -->
+                <div class="card mb-6 card-lg border border-light-success">
+                    <!-- card body -->
+                    <div class="card-body p-6 ">
+                        <h4 class="mb-4 h5">Category Information</h4>
+                        <div class="row">
+                            <form class="row g-3">
+                                <div class="col-md-12">
+                                    <select class="form-control" id="DDLType">
+                                        <option>--Select--</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" id="productTxt" class="form-control" placeholder="Product Category Name">
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" id="btnProduct" class="btn btn-primary">Submit</button>
+                                    <button type="reset" class="btn btn-secondary">Reset</button>
+                                </div>
+                            </form>      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-12">
+                <div class="card mb-6 card-lg border border-light-success">
+                    <div class="card-body p-6 ">
+                        <h5 class="mb-4">Category List</h5>
+                        <table class="table table-borderless">
+                            <tr class="border-bottom">
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Add Date</th>
+                                <th>Action</th>
+                            </tr>
+                            <tbody id="porductList">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/libs/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            bindDDLtype();
+            bindCatagory();
+        })
+        $('#btnProduct').click(function () {
+            var productName = $('#productTxt').val();
+            var pid = $('#DDLType').val();
+            $.ajax({
+                type: "post",
+                url: "/Admin/AddProductName",
+                data: { Name: productName,Pid:pid },
+                success: function (data) {
+                    bindCatagory();
+                }
+            })
+        })
+
+    </script>
+    <script>
+        function bindDDLtype() {
+            $.ajax({
+                type: 'post',
+                url: '/Admin/BindProTypeLst',
+                success: function (data) {
+                    $('#DDLType').html('');
+                    $.each(data, function (i, item) {
+                        var tr = '<option value=' + item.Id + '>' + item.Name + '</option>';
+                        $('#DDLType').append(tr);
+                    })
+                }
+
+            })
+        }
+
+        function bindCatagory() {
+            $.ajax({
+                type: 'post',
+                url: '/Admin/BindCategoryLst',
+                success: function (data) {
+                    $('#porductList').html('');
+                    $.each(data, function (i, item) {
+                        var tr = '<tr><td>' + i + '</td><td>' + item.Name + '</td><td>' + item.Crd + '</td><td>Edit/Delete</td></tr>';
+                        $('#porductList').append(tr);
+                    })
+                }
+
+            })
+        }
+    </script>
+</main>
+
+
+
