@@ -199,6 +199,7 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\js\theme.min.js" />
+    <Content Include="Scripts\js\vendors\editor.js" />
     <Content Include="Scripts\js\vendors\increment-value.js" />
     <Content Include="Scripts\js\vendors\inputmask.js" />
     <Content Include="Scripts\js\vendors\password.js" />
@@ -215,6 +216,7 @@
     <Content Include="Scripts\libs\jquery\dist\jquery.min.js" />
     <Content Include="Scripts\libs\nouislider\dist\nouislider.min.css" />
     <Content Include="Scripts\libs\nouislider\dist\nouislider.min.js" />
+    <Content Include="Scripts\libs\quill\dist\quill.min.js" />
     <Content Include="Scripts\libs\rater-js\index.js" />
     <Content Include="Scripts\libs\simplebar\dist\simplebar.min.css" />
     <Content Include="Scripts\libs\simplebar\dist\simplebar.min.js" />
@@ -319,6 +321,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CommonAdminClass.cs" />
     <Compile Include="Models\Login.cs" />
     <Compile Include="Models\MainPageData.cs" />
     <Compile Include="Models\Model1.Context.cs">
@@ -340,6 +343,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Mstr_Login.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -376,6 +382,7 @@
     <Content Include="Views\Admin\AddProduct.cshtml" />
     <Content Include="Views\Admin\AddCategories.cshtml" />
     <Content Include="Views\Admin\AddSubCategories.cshtml" />
+    <Content Include="Views\Admin\AddRealProduct.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -385,6 +392,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Uploads\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

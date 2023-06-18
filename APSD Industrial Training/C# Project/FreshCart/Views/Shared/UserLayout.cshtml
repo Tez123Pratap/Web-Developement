@@ -1,7 +1,6 @@
 ﻿@using FreshCart.Models
 @{
     MainPageData pageData = new MainPageData();
-
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -972,7 +971,7 @@
                         }
 
 
-}
+                    }
 
 
 
@@ -1557,18 +1556,18 @@
                                             @{
                                                 foreach (var catitem in pageData.GetAllCategoryById(item.Id))
                                                 {
-                                                        <div class="col-lg-3 col-6 mb-4 mb-lg-0">
-                                                            <h6 class="text-primary ps-3">@catitem.Name</h6>
-                                                            @{
-                                                                   foreach (var subcatitem in pageData.GetAllCategoryById(catitem.Id))
-                                                                   {
-                                                                         <a class="dropdown-item" href="shop-grid.html">@subcatitem.Name</a>
-                                                                   }
-                                                             }
+                                                    <div class="col-lg-3 col-6 mb-4 mb-lg-0">
+                                                        <h6 class="text-primary ps-3">@catitem.Name</h6>
+                                                        @{
+                                                            foreach (var subcat in pageData.GetAllCategoryById(catitem.Id))
+                                                            {
+                                                                <a class="dropdown-item" href="shop-grid.html">@subcat.Name</a>
+                                                            }
+                                                        }
 
 
 
-                                                        </div>
+                                                    </div>
 
                                                 }
                                             }
@@ -1622,7 +1621,7 @@
                             </a>
 
                         </li>
-                        
+
                     </ul>
                 </div>
 
@@ -2073,7 +2072,7 @@
     <script src="~/Scripts/js/vendors/zoom.js"></script>
     <script src="~/Scripts/js/vendors/increment-value.js"></script>
     @*@Scripts.Render("~/Scripts/libs/bootstrap/dist/js/bootstrap.bundle.min.js")
-    @Scripts.Render("~/Scripts/libs/tiny-slider/dist/min/tiny-slider.js")*@
+        @Scripts.Render("~/Scripts/libs/tiny-slider/dist/min/tiny-slider.js")*@
 </body>
 
 <!-- Mirrored from freshcart.codescandy.com/pages/index-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 May 2023 10:38:13 GMT -->

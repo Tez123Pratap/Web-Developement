@@ -99,6 +99,7 @@
         $('#btnProduct').click(function () {
             var productName = $('#productTxt').val();
             var pid = $('#DDLCatType').val();
+            $('#productTxt').val('');
             $.ajax({
                 type: "post",
                 url: "/Admin/AddProductName",

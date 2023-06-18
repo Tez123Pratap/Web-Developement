@@ -27,5 +27,6 @@ namespace FreshCart.Models
     
         public virtual DbSet<Mstr_Categories> Mstr_Categories { get; set; }
         public virtual DbSet<Mstr_Login> Mstr_Login { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
     }
 }

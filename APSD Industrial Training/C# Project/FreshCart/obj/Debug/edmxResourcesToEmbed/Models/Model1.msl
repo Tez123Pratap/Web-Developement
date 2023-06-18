@@ -32,5 +32,35 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="ECOMMERCEModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="LmdBy" ColumnName="LmdBy" />
+          <ScalarProperty Name="Lmd" ColumnName="Lmd" />
+          <ScalarProperty Name="CrdBy" ColumnName="CrdBy" />
+          <ScalarProperty Name="Crd" ColumnName="Crd" />
+          <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+          <ScalarProperty Name="MetaDescrip" ColumnName="MetaDescrip" />
+          <ScalarProperty Name="MetaTitle" ColumnName="MetaTitle" />
+          <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+          <ScalarProperty Name="RegPrice" ColumnName="RegPrice" />
+          <ScalarProperty Name="SKUActive" ColumnName="SKUActive" />
+          <ScalarProperty Name="ProSKU" ColumnName="ProSKU" />
+          <ScalarProperty Name="ProCode" ColumnName="ProCode" />
+          <ScalarProperty Name="InStock" ColumnName="InStock" />
+          <ScalarProperty Name="Informaition" ColumnName="Informaition" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="MainImg" ColumnName="MainImg" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="ProName" ColumnName="ProName" />
+          <ScalarProperty Name="ProSubCat" ColumnName="ProSubCat" />
+          <ScalarProperty Name="ProCat" ColumnName="ProCat" />
+          <ScalarProperty Name="ProType" ColumnName="ProType" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

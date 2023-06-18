@@ -32,5 +32,35 @@
   <EntityContainer Name="ECOMMERCEEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Mstr_Categories" EntityType="Self.Mstr_Categories" />
     <EntitySet Name="Mstr_Login" EntityType="Self.Mstr_Login" />
+    <EntitySet Name="Products" EntityType="ECOMMERCEModel.Product" />
   </EntityContainer>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProId" />
+    </Key>
+    <Property Name="ProId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProType" Type="Int32" />
+    <Property Name="ProCat" Type="Int32" />
+    <Property Name="ProSubCat" Type="Int32" />
+    <Property Name="ProName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Unit" Type="Int32" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="MainImg" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Informaition" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="InStock" Type="Boolean" />
+    <Property Name="ProCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ProSKU" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SKUActive" Type="Boolean" />
+    <Property Name="RegPrice" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="SalePrice" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="MetaTitle" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MetaDescrip" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="isActive" Type="Boolean" />
+    <Property Name="isDelete" Type="Boolean" />
+    <Property Name="Crd" Type="DateTime" Precision="3" />
+    <Property Name="CrdBy" Type="Int32" />
+    <Property Name="Lmd" Type="DateTime" Precision="3" />
+    <Property Name="LmdBy" Type="Int32" />
+  </EntityType>
 </Schema>

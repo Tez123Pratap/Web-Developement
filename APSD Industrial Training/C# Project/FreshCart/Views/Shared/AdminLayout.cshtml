@@ -9,8 +9,8 @@
     <meta content="Codescandy" name="author">
      <!-- Favicon icon-->
     <link rel="shortcut icon" type="image/x-icon" href="~/Content/AdminZone/images/favicon/favicon.ico">
-
-
+    <link href="~/Scripts/libs/dropzone/dist/min/dropzone.min.css" rel="stylesheet" />
+    
     <!-- Libs CSS -->
     <link href="~/Scripts/libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="~/Scripts/libs/feather-webfont/dist/feather-icons.css" rel="stylesheet">
@@ -232,22 +232,53 @@
                             <li class="nav-item mt-6 mb-3">
                                 <span class="nav-label">Store Managements</span>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link " href="/Admin/product">
+                            @*<li class="nav-item ">
+            <a class="nav-link " href="/Admin/product">
+                <div class="d-flex align-items-center">
+                    <span class="nav-link-icon"> <i class="bi bi-cart"></i></span>
+                    <span class="nav-link-text">Products</span>
+                </div>
+            </a>
+        </li>*@
+                            <li class="nav-item">
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#navProducts" aria-expanded="false" aria-controls="navCategoriesOrders">
                                     <div class="d-flex align-items-center">
                                         <span class="nav-link-icon"> <i class="bi bi-cart"></i></span>
                                         <span class="nav-link-text">Products</span>
                                     </div>
                                 </a>
+                                <div id="navProducts" class="collapse" data-bs-parent="#sideNavbar" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item ">
+                                            <a class="nav-link " href="/Admin/AddRealProduct">
+                                                Add Product
+                                            </a>
+                                        </li>
+                                        <!-- Nav item -->
+                                        @*<li class="nav-item ">
+                                            <a class="nav-link " href="/Admin/AddCategories">
+                                                Add Category
+
+                                            </a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="nav-link " href="/Admin/AddSubCategories">
+                                                Add Sub-Category
+
+                                            </a>
+                                        </li>*@
+                                    </ul>
+                                </div>
                             </li>
+
                             @*<li class="nav-item ">
-                                <a class="nav-link " href="/Admin/categories">
-                                    <div class="d-flex align-items-center">
-                                        <span class="nav-link-icon"> <i class="bi bi-list-task"></i></span>
-                                        <span class="nav-link-text">Categories</span>
-                                    </div>
-                                </a>
-                            </li>*@
+            <a class="nav-link " href="/Admin/categories">
+                <div class="d-flex align-items-center">
+                    <span class="nav-link-icon"> <i class="bi bi-list-task"></i></span>
+                    <span class="nav-link-text">Categories</span>
+                </div>
+            </a>
+        </li>*@
                             <li class="nav-item">
                                 <a class="nav-link   collapsed " href="#"
                                    data-bs-toggle="collapse" data-bs-target="#navCategoriesrders" aria-expanded="false"

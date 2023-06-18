@@ -29,8 +29,38 @@
     <Property Name="Lmd" Type="datetime" />
     <Property Name="LmdBy" Type="int" />
   </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProId" />
+    </Key>
+    <Property Name="ProId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProType" Type="int" />
+    <Property Name="ProCat" Type="int" />
+    <Property Name="ProSubCat" Type="int" />
+    <Property Name="ProName" Type="varchar" MaxLength="200" />
+    <Property Name="Unit" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="MainImg" Type="varchar(max)" />
+    <Property Name="Details" Type="varchar(max)" />
+    <Property Name="Informaition" Type="varchar(max)" />
+    <Property Name="InStock" Type="bit" />
+    <Property Name="ProCode" Type="varchar" MaxLength="10" />
+    <Property Name="ProSKU" Type="varchar" MaxLength="20" />
+    <Property Name="SKUActive" Type="bit" />
+    <Property Name="RegPrice" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="SalePrice" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="MetaTitle" Type="varchar" MaxLength="100" />
+    <Property Name="MetaDescrip" Type="varchar(max)" />
+    <Property Name="isActive" Type="bit" />
+    <Property Name="isDelete" Type="bit" />
+    <Property Name="Crd" Type="datetime" />
+    <Property Name="CrdBy" Type="int" />
+    <Property Name="Lmd" Type="datetime" />
+    <Property Name="LmdBy" Type="int" />
+  </EntityType>
   <EntityContainer Name="ECOMMERCEModelStoreContainer">
     <EntitySet Name="Mstr_Categories" EntityType="Self.Mstr_Categories" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Mstr_Login" EntityType="Self.Mstr_Login" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

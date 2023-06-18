@@ -34,9 +34,39 @@
           <Property Name="Lmd" Type="datetime" />
           <Property Name="LmdBy" Type="int" />
         </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProId" />
+          </Key>
+          <Property Name="ProId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProType" Type="int" />
+          <Property Name="ProCat" Type="int" />
+          <Property Name="ProSubCat" Type="int" />
+          <Property Name="ProName" Type="varchar" MaxLength="200" />
+          <Property Name="Unit" Type="int" />
+          <Property Name="Quantity" Type="int" />
+          <Property Name="MainImg" Type="varchar(max)" />
+          <Property Name="Details" Type="varchar(max)" />
+          <Property Name="Informaition" Type="varchar(max)" />
+          <Property Name="InStock" Type="bit" />
+          <Property Name="ProCode" Type="varchar" MaxLength="10" />
+          <Property Name="ProSKU" Type="varchar" MaxLength="20" />
+          <Property Name="SKUActive" Type="bit" />
+          <Property Name="RegPrice" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="SalePrice" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="MetaTitle" Type="varchar" MaxLength="100" />
+          <Property Name="MetaDescrip" Type="varchar(max)" />
+          <Property Name="isActive" Type="bit" />
+          <Property Name="isDelete" Type="bit" />
+          <Property Name="Crd" Type="datetime" />
+          <Property Name="CrdBy" Type="int" />
+          <Property Name="Lmd" Type="datetime" />
+          <Property Name="LmdBy" Type="int" />
+        </EntityType>
         <EntityContainer Name="ECOMMERCEModelStoreContainer">
           <EntitySet Name="Mstr_Categories" EntityType="Self.Mstr_Categories" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Mstr_Login" EntityType="Self.Mstr_Login" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -74,7 +104,37 @@
         <EntityContainer Name="ECOMMERCEEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Mstr_Categories" EntityType="Self.Mstr_Categories" />
           <EntitySet Name="Mstr_Login" EntityType="Self.Mstr_Login" />
+          <EntitySet Name="Products" EntityType="ECOMMERCEModel.Product" />
         </EntityContainer>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProId" />
+          </Key>
+          <Property Name="ProId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProType" Type="Int32" />
+          <Property Name="ProCat" Type="Int32" />
+          <Property Name="ProSubCat" Type="Int32" />
+          <Property Name="ProName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Unit" Type="Int32" />
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="MainImg" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Informaition" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="InStock" Type="Boolean" />
+          <Property Name="ProCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ProSKU" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SKUActive" Type="Boolean" />
+          <Property Name="RegPrice" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="SalePrice" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="MetaTitle" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="MetaDescrip" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="isActive" Type="Boolean" />
+          <Property Name="isDelete" Type="Boolean" />
+          <Property Name="Crd" Type="DateTime" Precision="3" />
+          <Property Name="CrdBy" Type="Int32" />
+          <Property Name="Lmd" Type="DateTime" Precision="3" />
+          <Property Name="LmdBy" Type="Int32" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -109,6 +169,36 @@
                 <ScalarProperty Name="CrdBr" ColumnName="CrdBr" />
                 <ScalarProperty Name="Lmd" ColumnName="Lmd" />
                 <ScalarProperty Name="LmdBy" ColumnName="LmdBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="ECOMMERCEModel.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="LmdBy" ColumnName="LmdBy" />
+                <ScalarProperty Name="Lmd" ColumnName="Lmd" />
+                <ScalarProperty Name="CrdBy" ColumnName="CrdBy" />
+                <ScalarProperty Name="Crd" ColumnName="Crd" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+                <ScalarProperty Name="isActive" ColumnName="isActive" />
+                <ScalarProperty Name="MetaDescrip" ColumnName="MetaDescrip" />
+                <ScalarProperty Name="MetaTitle" ColumnName="MetaTitle" />
+                <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+                <ScalarProperty Name="RegPrice" ColumnName="RegPrice" />
+                <ScalarProperty Name="SKUActive" ColumnName="SKUActive" />
+                <ScalarProperty Name="ProSKU" ColumnName="ProSKU" />
+                <ScalarProperty Name="ProCode" ColumnName="ProCode" />
+                <ScalarProperty Name="InStock" ColumnName="InStock" />
+                <ScalarProperty Name="Informaition" ColumnName="Informaition" />
+                <ScalarProperty Name="Details" ColumnName="Details" />
+                <ScalarProperty Name="MainImg" ColumnName="MainImg" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="Unit" ColumnName="Unit" />
+                <ScalarProperty Name="ProName" ColumnName="ProName" />
+                <ScalarProperty Name="ProSubCat" ColumnName="ProSubCat" />
+                <ScalarProperty Name="ProCat" ColumnName="ProCat" />
+                <ScalarProperty Name="ProType" ColumnName="ProType" />
+                <ScalarProperty Name="ProId" ColumnName="ProId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

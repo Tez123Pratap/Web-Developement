@@ -23,6 +23,5 @@ namespace FreshCart.Models
         public Nullable<int> Crdby { get; set; }
         public Nullable<System.DateTime> Lmd { get; set; }
         public Nullable<int> Lmdby { get; set; }
-
     }
 }
